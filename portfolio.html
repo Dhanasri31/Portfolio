@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Dhanasri M – Full Stack Developer & AI Intern Candidate</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700;800&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#EEF1F7; --surface:#FFFFFF; --ink:#16213E; --muted:#56607A; --line:#D5DBE8;
+  --accent:#2F4BFF; --accent-soft:#E1E6FF; --good:#0F8A5F; --warn:#B26A00;
+  box-sizing:border-box; padding-top:env(safe-area-inset-top,0px); padding-bottom:env(safe-area-inset-bottom,0px);
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --bg:#0F1426; --surface:#171E36; --ink:#EAEEFB; --muted:#A3ADC9; --line:#2A3354;
+    --accent:#8CA0FF; --accent-soft:#222B54; --good:#52D9A3; --warn:#F0B35A; color-scheme:dark;
+  }
+}
+html{scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:'DM Sans',system-ui,sans-serif;line-height:1.6;font-size:17px}
+a{color:var(--accent)}
+a:focus-visible,button:focus-visible{outline:3px solid var(--accent);outline-offset:3px}
+.wrap{max-width:960px;margin:0 auto;padding:0 22px}
+h1,h2,h3{font-family:'Bricolage Grotesque',system-ui,sans-serif;line-height:1.1;margin:0}
+header.top{display:flex;justify-content:space-between;align-items:center;padding:22px 0}
+header.top b{font-family:'Bricolage Grotesque',sans-serif;font-size:20px}
+nav a{margin-left:18px;text-decoration:none;color:var(--muted);font-weight:500;font-size:15px}
+nav a:hover{color:var(--ink)}
+.hero{padding:48px 0 64px}
+.hero h1{font-size:clamp(44px,9vw,92px);font-weight:800;letter-spacing:-.03em}
+.hero p.lead{font-size:clamp(19px,2.6vw,24px);max-width:34em;margin:22px 0 0;color:var(--muted)}
+.cta{display:flex;flex-wrap:wrap;gap:12px;margin-top:30px}
+.btn{display:inline-block;padding:12px 22px;border-radius:999px;font-weight:700;text-decoration:none;border:2px solid var(--accent)}
+.btn.primary{background:var(--accent);color:#fff}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]) .btn.primary{color:#0F1426}}
+.btn.ghost{color:var(--accent)}
+section{padding:40px 0}
+h2{font-size:clamp(28px,4vw,40px);font-weight:700;margin-bottom:24px;letter-spacing:-.02em}
+.feature{background:var(--surface);border:2px solid var(--accent);border-radius:20px;padding:28px;display:grid;grid-template-columns:1.3fr 1fr;gap:28px}
+.badge{display:inline-block;background:var(--accent-soft);color:var(--accent);font-weight:700;font-size:14px;padding:3px 12px;border-radius:999px;margin-bottom:12px}
+.feature h3{font-size:30px;margin-bottom:10px}
+.tags{display:flex;flex-wrap:wrap;gap:8px;margin:16px 0 0;padding:0;list-style:none}
+.tags li{background:var(--bg);border:1px solid var(--line);border-radius:8px;padding:3px 11px;font-size:14px;font-weight:500}
+.score{background:var(--bg);border-radius:14px;padding:20px;align-self:start}
+.score .row{display:flex;justify-content:space-between;font-size:14px;font-weight:500;margin-top:12px}
+.bar{height:8px;background:var(--line);border-radius:8px;margin-top:5px;overflow:hidden}
+.bar i{display:block;height:100%;background:var(--accent);border-radius:8px}
+.score .big{font-family:'Bricolage Grotesque',sans-serif;font-size:44px;font-weight:800}
+.score small{color:var(--muted)}
+.projects{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:20px;margin-top:20px}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:24px}
+.card h3{font-size:22px;margin-bottom:8px}
+.card ul{padding-left:20px;margin:10px 0 0;color:var(--muted)}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+.skills dt{font-weight:700;margin-top:14px}
+.skills dd{margin:4px 0 0;color:var(--muted)}
+.timeline{border-left:3px solid var(--accent);padding-left:20px}
+.timeline h3{font-size:20px}
+.timeline p{margin:2px 0 0;color:var(--muted)}
+.edu{margin-bottom:18px}
+footer{border-top:1px solid var(--line);margin-top:40px;padding:36px 0 48px}
+footer h2{margin-bottom:12px}
+footer p{margin:6px 0}
+@media (max-width:720px){.feature,.two{grid-template-columns:1fr}nav a{margin-left:12px}}
+@media (prefers-reduced-motion: reduce){html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="top">
+    <b>Dhanasri M</b>
+    <nav><a href="#projects">Projects</a><a href="#skills">Skills</a><a href="#about">Experience</a><a href="#contact">Contact</a></nav>
+  </header>
+
+  <main>
+  <div class="hero">
+    <h1>Hi, I’m Dhanasri.</h1>
+    <p class="lead">A Computer Science graduate who builds full stack web apps with React, Django and MySQL, and is now building AI tools with Python and generative AI.</p>
+    <div class="cta">
+      <a class="btn primary" href="mailto:dhanasri0831@gmail.com">Email me</a>
+      <a class="btn ghost" href="https://www.linkedin.com/in/dhanasri05" target="_blank" rel="noopener">LinkedIn profile</a>
+    </div>
+  </div>
+
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="feature">
+      <div>
+        <span class="badge">In progress</span>
+        <h3>AI Resume Analyzer</h3>
+        <p>A Python tool that reads a resume, uses generative AI to score it against a job role, and suggests clear improvements to wording, skills and structure.</p>
+        <ul class="tags"><li>Python</li><li>Generative AI</li><li>Prompt engineering</li></ul>
+      </div>
+      <div class="score" aria-label="Example of the analyzer output">
+        <small>Example output</small>
+        <div class="big">78<small> / 100</small></div>
+        <div class="row"><span>Skills match</span><span>85%</span></div><div class="bar"><i style="width:85%"></i></div>
+        <div class="row"><span>Project impact</span><span>70%</span></div><div class="bar"><i style="width:70%"></i></div>
+        <div class="row"><span>Clarity</span><span>80%</span></div><div class="bar"><i style="width:80%"></i></div>
+      </div>
+    </div>
+
+    <div class="projects">
+      <article class="card">
+        <h3>Online Job Portal</h3>
+        <p>Web portal where users search and apply for jobs and employers manage their listings.</p>
+        <ul><li>User login, job search and applications</li><li>Employer job management</li><li>Responsive React.js interface connected to Django and MySQL</li></ul>
+        <ul class="tags"><li>React.js</li><li>Django</li><li>MySQL</li><li>JavaScript</li></ul>
+      </article>
+      <article class="card">
+        <h3>Smart Complaint Management System</h3>
+        <p>Web system to register complaints online and track them until they are resolved.</p>
+        <ul><li>Authentication, status tracking and assignment</li><li>Admin management panel</li><li>React.js interface using REST APIs</li></ul>
+        <ul class="tags"><li>React.js</li><li>Django</li><li>MySQL</li><li>REST API</li></ul>
+      </article>
+    </div>
+  </section>
+
+  <section id="skills">
+    <h2>Skills</h2>
+    <dl class="skills two">
+      <div>
+        <dt>Front end</dt><dd>HTML, CSS, JavaScript, React.js</dd>
+        <dt>Back end</dt><dd>Python, Django</dd>
+        <dt>Database</dt><dd>MySQL</dd>
+        <dt>Tools</dt><dd>Visual Studio Code, GitHub</dd>
+      </div>
+      <div>
+        <dt>AI focus</dt><dd>Python, Generative AI, Prompt engineering</dd>
+        <dt>Soft skills</dt><dd>Adaptability, communication, problem-solving</dd>
+        <dt>Certificates</dt><dd>Full Stack Development (Besant Technology)<br>Python (Guvi)</dd>
+      </div>
+    </dl>
+  </section>
+
+  <section id="about">
+    <h2>Experience and education</h2>
+    <div class="two">
+      <div class="timeline">
+        <h3>Web Development and Web Design Intern</h3>
+        <p>Neoweb Software Solution</p>
+        <p style="margin-top:10px">Built responsive web pages with HTML, CSS, JavaScript and PHP, and improved website layouts and user experience.</p>
+      </div>
+      <div>
+        <div class="edu"><h3>B.Sc. Computer Science</h3><p>Sakthikailash Woman’s College, Dharmapuri<br>2021–2024 · CGPA 8.1</p></div>
+        <div class="edu"><h3>HSC</h3><p>Sri Vijay Vidyalaya Matric Hr.Sec.School · 87%</p></div>
+        <div class="edu"><h3>SSLC</h3><p>Sri Vijay Vidyalaya Matric Hr.Sec.School · 88%</p></div>
+      </div>
+    </div>
+  </section>
+  </main>
+
+  <footer id="contact">
+    <h2>Let’s work together</h2>
+    <p>I’m looking for an AI or full stack internship. Dharmapuri, Tamil Nadu, India.</p>
+    <p><a href="mailto:dhanasri0831@gmail.com">dhanasri0831@gmail.com</a></p>
+    <p><a href="https://www.linkedin.com/in/dhanasri05" target="_blank" rel="noopener">linkedin.com/in/dhanasri05</a></p>
+  </footer>
+</div>
+</body>
+</html>
